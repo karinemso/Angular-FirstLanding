@@ -1,0 +1,15 @@
+<header>
+    <h1 class="title">Meu primeiro app Angular!</h1>
+    <ul (click)="removeClass()" [ngClass]="{'active': isMenuActive }">
+        <li routerLink = '' >Home</li>
+        <li routerLink = 'conceitos'>Conceitos</li>
+        <li routerLink = 'ondeaprender'>Onde Aprender</li>
+    </ul>
+
+    <div class="hamburguer" (click)="addClass()">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+     
+    </div>
+</header>
